@@ -1,4 +1,4 @@
-name: Release
+name: Auto Release
 on:
   push:
     branches: [ main ]
@@ -8,7 +8,6 @@ jobs:
   release:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v4.1.1
